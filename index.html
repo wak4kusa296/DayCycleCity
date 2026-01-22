@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>日本の時間に合わせた風景</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="info-panel">
+            <h1>日本の時間に合わせた風景</h1>
+            <div class="time-display">
+                <p id="current-time"></p>
+                <p id="time-period"></p>
+            </div>
+        </div>
+        <div id="debug-panel" class="debug-panel" style="display: none;">
+            <h2>デバッグモード</h2>
+            <div class="debug-controls">
+                <label for="debug-time-slider">時間: <span id="debug-time-display">00:00</span></label>
+                <input type="range" id="debug-time-slider" min="0" max="1439" value="0" step="1">
+            </div>
+        </div>
+        <div class="video-container">
+            <video id="video-morning" class="video-layer" loop muted playsinline preload="none">
+                <source src="mp4/morning.mp4" type="video/mp4">
+            </video>
+            <video id="video-day" class="video-layer" loop muted playsinline preload="none">
+                <source src="mp4/day.mp4" type="video/mp4">
+            </video>
+            <video id="video-sunset" class="video-layer" loop muted playsinline preload="none">
+                <source src="mp4/Sunset.mp4" type="video/mp4">
+            </video>
+            <video id="video-night" class="video-layer" loop muted playsinline preload="none">
+                <source src="mp4/night.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
