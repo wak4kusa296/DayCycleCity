@@ -22,19 +22,11 @@
                 <input type="range" id="debug-time-slider" min="0" max="1439" value="0" step="1">
             </div>
         </div>
-        <div class="video-container">
-            <video id="video-morning" class="video-layer" loop muted playsinline preload="none">
-                <source src="mp4/morning.mp4" type="video/mp4">
-            </video>
-            <video id="video-day" class="video-layer" loop muted playsinline preload="none">
-                <source src="mp4/day.mp4" type="video/mp4">
-            </video>
-            <video id="video-sunset" class="video-layer" loop muted playsinline preload="none">
-                <source src="mp4/Sunset.mp4" type="video/mp4">
-            </video>
-            <video id="video-night" class="video-layer" loop muted playsinline preload="none">
-                <source src="mp4/night.mp4" type="video/mp4">
-            </video>
+        <div class="image-container">
+            <img id="image-morning" class="scene-layer" src="img/Morning.png" alt="朝の風景">
+            <img id="image-day" class="scene-layer" src="img/Day.PNG" alt="昼の風景">
+            <img id="image-sunset" class="scene-layer" src="img/Sunset.png" alt="夕方の風景">
+            <img id="image-night" class="scene-layer" src="img/Night.png" alt="夜の風景">
         </div>
     </div>
     <script src="script.js"></script>
